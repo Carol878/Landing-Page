@@ -296,3 +296,15 @@ form button:hover {
         text-align: justify;
         font-size: 19px;
     }
+
+    .imgMore img{
+        width: 200px;
+        height: 220px;
+        object-fit: cover;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+        margin-right: 150px;
+        margin-bottom: 3%;
+        display: block;
+    }
