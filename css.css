@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap');
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing:border-box;
+    font-family: "Poiret One", sans-serif;
+}
+
+body{
+    background-image: url("img/fondo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /*Ell 100% de pantalla q veremos en ese momento*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+header{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    color:rgb(137,66,188);
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background:white;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+}
+
+header .logo:hover{
+    color:white;
+    background: rgb(137,66,168);
+    transition: 1s;
+}
+
+header .navbar{
+    position: relative;
+    display: flex;
+}
+
+header .navbar li{
+    list-style: none; /*Quitar puntos*/
+    margin-left: 30px;
+}
+
+header .navbar li a{
+   text-decoration:  none; /*Quitar puntos*/
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+header .navbar li a:hover{
+    border-bottom: 5px solid rgb(137,66,188);
+    padding: 2px;
+}
+
+/*Contenido de la WEB*/
+
+.contenido{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.contenido .titulobox{
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+}
+
+.contenido .titulobox h2{
+    font-size: 4.5em;
+    text-transform: uppercase;
+    color: white;
+    padding-bottom: 2%;
+}
+
+.contenido .titulobox p{
+    font-size: 2.5em;
+    line-height: 1.5;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contenido .titulobox a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:rgb(137,66,168);
+    background: white;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    font-family: "Quicksand", sans-serif;
+}
+
+.contenido .titulobox a:hover{
+    color: white;
+    background: rgb(137,66,188);
+    transition: 0.5s;
+}
+
+.contenido .imgBox{
+    width: 30px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 70px;
+    margin-top: -10px;
+    z-index: -5; /*poner por detrás imagen*/
+}
+
+.contenido .imgBox img{
+    height: 30vh;
+}
+
+.contenido .imgBox .img:hover{
+    height: 80vh;
+}
+
+/*Copyright*/
+
+.copyright{
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+    margin-bottom: 20px;
+    padding: 0 5px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p{
+    color: white;
+    text-align: center;
+    margin-left: 100px;
+}
+
+/*Redes sociales */
+
+.redesSociales{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 30px;
+    list-style: none;
+}
+
+.redesSociales li{
+    padding: 10px;
+}
+
+.redesSociales li a {
+    color: white;
+    font-size: 2.5em;
+    transition: 0.3s;
+}
+
+.redesSociales li:hover a {
+    color: #ff0080;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 700px;
+    margin: 0;
+}
+
+.titFormulario {
+    color: white;
+    text-align: center;
+}
+
+.contenedorFormulario{
+    text-align: left;
+    padding: 2%;
+    background-color: rgba(204,169,221,0.7);
+}
+
+form input, form textarea {
+    padding: 4px;
+    margin: 8px 0;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+fieldset{
+    background-color: #cca9dd;
+    border: 1px solid #ccc;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    border-radius: 4px;
+    padding: 8px 15px;
+    opacity: 1;
+}
+
+label textarea {
+    width: 100%;
+    height: 150px;
+    resize: vertical;
+    margin: auto;
+}
+
+form button {
+    padding: 10px;
+    background-color: #7668af;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+    gap: 50px;
+    justify-content: center;
+    width: 100px;
+}
+
+.contenedorBotones{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background-color: #cca9dd;
+}
+
+.contenidoRango {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contenidoRango label {
+    text-align: left;
+}
+
+.contenidoRango input[type="range"] {
+    width: 300px;
+}
+    /*Sobre mi*/
+
+    .contenedorMe{
+        align-content: center;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .titSobreMi{
+        color: white;
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 8%;
+    }
+    p{
+        color: white;
+        font-family: "Outfit", sans-serif;
+        text-align: justify;
+        font-size: 19px;
+    }

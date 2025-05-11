@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewpoint" content="width=device-width, initial-scale=0.1">
+  <link rel="stylesheet" href="css.css">
+  <link rel="icon" type="image/x-icon" href="img/upc.png">
+  <!-- Libreria iconos web https://ionic.io -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <title>Contacto</title>
+</head>
+  <body>
+  <main>
+      <section>
+        <header>
+          <a href="#" class="logo"> Nahir Carolina Torres</a>
+          <ul class="navbar">
+            <li>
+              <a href="aboutme.html"> Quién soy </a>
+            </li>
+            <li>
+              <a href="cv/CV.pdf" target="_blank"> CV </a>
+            </li>
+            <li>
+              <a href="#">Proyectos destacados </a>
+            </li>
+            <li>
+              <a href="contact.html"> Contacto </a>
+            </li>
+          </ul>
+        </header>
+        <form action="mailto:trotam97@gmil.com" method="post" autocomplete="on" target="_blank" class="contenedorFormulario">
+          <h2 class="titFormulario">Formulario de Contacto</h2>
+          <fieldset>
+            <legend>
+              Datos personales
+            </legend>
+            <label> <input type="text" id="nomApe" name="name" placeholder="Nombre" required /></label>
+            <label> <input type="text" id="Apel" name="Apel" placeholder="Apellidos" required /></label>
+            <label> <input type="text" id="emp" name="Apel" placeholder="Nombre de la empresa" required /></label>
+            <label><input type="email" id="email" name="email" placeholder="Correo electrónico" required /></label>
+            <label><input type="text" id="tel" name="telefono" placeholder="Teléfono" required /></label>
+          </fieldset>
+          <fieldset>
+            <legend>
+              Interés del usuario
+            </legend>
+            <label>
+              <input type="radio" name="Interés" value="Web">
+              Web
+            </label>
+            <label>
+              <input type="radio" name="Interés" value="Multiplataforma">
+              Multiplataforma
+            </label>
+            <label>
+              <input type="radio" name="Interés" value="Project manager">
+              Project manager
+            </label>
+            <label>
+              <input type="radio" name="Interés" value="Monitora">
+              Monitora
+            </label>
+            <label>
+              <input type="radio" name="Interés" value="Formación">
+              Formación
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>
+              Puestos que podría ocupar
+            </legend>
+            <label>
+              Puesto de interés:
+              <select name="puestos">
+                <option value="1">Programador</option>
+                <option value="2">Back end</option>
+                <option value="3">Front end</option>
+                <option value="4">Diseñador</option>
+                <option value="5">Tester</option>
+              </select>
+            </label>
+            Dime la disponibilidad del puesto ofertado:
+            <br><input type="checkbox" name="si" checked> Completa e inmediata
+            <br><input type="checkbox" name="duda"> Media Jornada
+            <br><input type="checkbox" name="duda"> Fines de semana
+            <br>Indique posible fecha de inicio:
+            <input type="date" name="fechaDispo" id="fechaDispo">
+            <br><input type="file" name="adjunto" accept=".pdf" multiple>
+          </fieldset>
+          <fieldset>
+            <legend>
+              Dejame un mensaje
+            </legend>
+            <label >
+              <textarea name="mensaje" rows="5" placeholder="" required></textarea>
+            </label>
+          </fieldset>
+          <div class="contenedorBotones">
+            <button type="reset">Borrar</button>
+            <button onclick="alert('Enviado correctamente')" type="submit">Enviar</button>
+          </div>
+        </form>
+        <div class="copyright">
+          <p>&copy; Web personal creada para la materia de Lenguaje de Marcas <br>del CFGS de DAW</p>
+          <!-- Imagen descargada de <a href="https://www.flaticon.es/iconos-gratis/tecnologia" title="tecnología iconos">Tecnología iconos creados por Haris Masood - Flaticon</a> -->
+        </div>
+        <ul class="redesSociales">
+          <li>
+            <a href="mailto:trotam97@gmil.com">
+              <ion-icon name="mail-open-outline"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="www.linkedin.com/in/nahir-carolina-torres-9540a717b">
+              <ion-icon name="logo-linkedin"></ion-icon>
+
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Carol878">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
